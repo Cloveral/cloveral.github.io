@@ -1,0 +1,31 @@
+.link {
+	margin: $gutter_col 0;
+	a {
+		padding: $gutter_col/4 $gutter_col/2;
+		border: 2px solid lighten($color_grey, 30%);
+		font-size: .9rem;
+		color: $color_grey;
+		@include rounded(10px);
+		&:hover {
+			color: darken($color_grey, 5%);
+			background-color: lighten($color_grey, 45%);
+			border: 2px solid lighten($color_grey, 45%);
+		}
+	}
+}
+
+.versioni {
+	.link {
+		margin-top: $gutter_col*2;
+		a {
+			border: 2px solid lighten(#fff, 30%);
+			color: #fff;
+			@include rounded(5px);
+			&:hover {
+				color: $color_grey;
+				background-color: lighten(#fff, 45%);
+				border: 2px solid lighten(#fff, 45%);
+			}
+		}
+	}
+}

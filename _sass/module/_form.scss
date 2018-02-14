@@ -1,0 +1,109 @@
+.form-contatto {
+	label,
+	input {
+		display: block;
+		width: 90%;
+	}
+	textarea {
+		display: block;
+		width: 100%;
+	}
+	input,
+	textarea {
+		padding: $gutter_col/4;
+		color: $color_grey;
+		font-weight: 300;
+		border: 1px solid $color_grey;
+		background-color: #f6f6f6;
+		@include rounded(4px);
+	}
+	textarea {
+		resize: none;
+		height: 110px;
+	}
+	label {
+		font-weight: 400;
+		margin-bottom: $gutter_col/4;
+	}
+	textarea:focus,
+	input:focus,
+	input[type]:focus {
+		border-color: $color_grey;
+		box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 2px $color_grey;
+		outline: 0 none;
+	}
+	.field {
+		margin-bottom: $gutter_col/2;
+	}
+	.required {
+		color: $color_error;
+	}
+	.dati-personali {
+		.check-box,
+		.label-text {
+			display: inline;
+			width: auto;
+		}
+		.label-text {
+			font-size: .8em;
+			font-style: italic;
+		}
+	}
+	.submit-button {
+		input {
+			cursor: pointer;
+			width: 100%;
+			font-weight: 300;
+			color: #fff;
+			background-color: $color_grey;
+			text-transform: uppercase;
+			@include transition(all, .5s, ease-in-out);
+			&:hover {
+				background-color: lighten($color_grey, 15%);
+			}
+		}
+	}
+	// errori
+	.error-general-message {
+		margin: 0 0 10px 0;
+		padding: 10px 0;
+		color: $color_error;
+		font-weight: 400;
+		border-top: 1px solid $color_error;
+		border-bottom: 1px solid $color_error;
+	}
+	.field-error {
+		color: $color_error;
+		input,
+		textarea {
+			background-color: rgba( $color_error, .1 );
+			border: 1px solid $color_error;
+		}
+		.error-message {
+			font-size: .8em;
+		}
+	}
+}
+
+// newsletter
+.site-newsletter {
+	background-color: #b7d470;
+	border-top: 3px solid #fff;
+	border-bottom: 3px solid #fff;
+	.grid {
+		.third {
+			vertical-align: bottom;
+		}
+	}
+	.email {
+		input {
+			width: 100%;
+		}
+	}
+}
+.submit-button-newsletter {
+	margin-top: $gutter_col;
+	input {
+		width: 30%;
+	}
+}

@@ -1,0 +1,58 @@
+body,
+html {
+	margin: 0;
+	padding: 0;
+	line-height: 1.4;
+	color: #777;
+	font-family: $font_base;
+	background-color: #f6f6f6;
+	color: $color_grey;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+a,
+a:visited {
+	color: $color_brand_blue;
+	text-decoration: none;
+	@include transition(all, .5s, ease-in-out);
+}
+
+a:hover {
+	color: $color_brand_green;
+	text-decoration: none;
+}
+
+// Typography
+h1,
+h2,
+h3 {
+	font-family: $font_base;
+	margin: 0;
+	font-weight: 300;
+}
+
+h1 {
+	margin-bottom: $gutter_col/2;
+}
+
+h2 {
+	margin-bottom: $gutter_col/2;
+}
+
+h3 {
+	
+}
+
+p {
+	margin: 0 0 .5rem 0;
+}
+
+strong {
+	font-weight: 700;
+}
+
+.hide {
+	display: none;
+	visibility: hidden;
+}

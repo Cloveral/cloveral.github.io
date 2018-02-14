@@ -1,0 +1,15 @@
+.logo-img {
+	display: block;
+	max-width: 150px;
+	height: auto;
+}
+
+/* ----------------------------------------
+MEDIA QUERIES
+---------------------------------------- */
+@media (max-width: 766px) {
+	.logo-img {
+		max-width: 75%;
+		margin: 0 auto;
+	}
+}

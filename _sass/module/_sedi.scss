@@ -1,0 +1,29 @@
+.sedi {
+	.half {
+		&:first-child {
+			border-right: 1px solid $color_grey;
+		}
+	}
+	a {
+		color: $color_grey;
+		&:hover {
+			color: $color_brand_blue;
+		}
+	}
+}
+.titolo-sede-legale {
+	color: $color_brand_blue;
+}
+.titolo-sede-operativa {
+	color: $color_brand_green;
+}
+
+@media (max-width: 766px) {
+	.sedi {
+		.half {
+			&:first-child {
+				border-right: none;
+			}
+		}
+	}
+}

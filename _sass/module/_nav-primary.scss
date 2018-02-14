@@ -1,0 +1,89 @@
+.menu-primary {
+	padding: 0;
+	margin: 0;
+	.menu-item {
+		display: inline-block;
+		line-height: 35px;
+		&.accedi {
+			a {
+				padding-left: $gutter_col*1.6;
+				background: transparent url(../img/bg_accedi.svg) left center no-repeat;
+			}
+		}
+		a {
+			display: block;
+			padding: 0 $gutter_col/1.2;
+			line-height: 35px;
+			color: $color_grey;
+			&:hover {
+				color: $color_brand_blue;
+			}
+		}
+	}
+	.active {
+		a {
+			font-weight: 600;
+			color: $color_brand_blue;
+		}
+	}
+}
+
+.menu-primary-mobile {
+	display: none;
+	height: 0;
+}
+
+/* ----------------------------------------
+MEDIA QUERIES
+---------------------------------------- */
+@media (max-width: 766px) {
+	.menu-primary-mobile {
+		display: block;
+		height: auto;
+		background-color: $color_grey;
+		padding: $gutter_col/4 0;
+		margin-top: 20px;
+		font-size: 2rem;
+		font-weight: 400;
+		text-align: center;
+		cursor: pointer;
+		i {
+			background: -webkit-linear-gradient($color_brand_blue, $color_brand_green);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			@include transition(all, .1s, ease-in-out);
+			&.down{
+				@include rotate(90deg);
+			}
+		}
+	}
+	.menu-primary {
+		display: none;
+		padding: $gutter_col 0;
+		text-align: center;
+		.menu-item {
+			display: block;
+			line-height: 40px;
+			border-bottom: 1px solid #eee;
+			&:last-of-type {
+				border-bottom: none;
+			}
+			&.accedi {
+				a {
+					padding-left: 0;
+					background: none;
+				}
+			}
+			a {
+				padding: 0;
+				line-height: 40px;
+				color: $color_grey;
+				font-size: 1.1rem;
+				text-transform: uppercase;
+				&:hover {
+					color: $color_brand_blue;
+				}
+			}
+		}
+	}
+}
