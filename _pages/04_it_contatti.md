@@ -34,7 +34,7 @@ ref: contacts
 		<div class="grid">
 			<div class="half">
 				<h2 class="titolo-sede-operativa">Telefono</h2>
-				<p>+39 030 2074939</p>
+				<p>+39 030 77 77 827</p>
 			</div>
 			<div class="half">
 				<h2 class="titolo-sede-legale">Email</h2>
