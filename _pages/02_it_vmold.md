@@ -39,7 +39,7 @@ ref: vmold
 				</a>			
 			</li>		
 			<li class="menu-item">			
-				<a href="//vmold.cloveral.com">
+				<a href="#">
 					Accedi
 				</a>			
 			</li>		
